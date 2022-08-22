@@ -1,0 +1,18 @@
+package fraud.bigdata.app;
+
+import org.apache.beam.sdk.transforms.PTransform;
+import org.apache.beam.sdk.transforms.ParDo;
+import org.apache.beam.sdk.values.PCollection;
+
+import fraud.bigdata.app.entity.TransactionStatus;
+
+public class WriteToPubSub extends PTransform<PCollection<TransactionStatus>, PCollection<String>> {
+
+	private static final long serialVersionUID = 1L;
+
+	@Override
+	public PCollection<String> expand(PCollection<TransactionStatus> input) {
+		return input.apply(ParDo.of(new WriteToPubSubFn()));
+	}
+
+}
