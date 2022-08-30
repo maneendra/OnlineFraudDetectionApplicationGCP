@@ -1,3 +1,7 @@
+#Publications
+## A Literature Review on the Challenges of Applying Test-Driven Development in Software Engineering
+https://csimq-journals.rtu.lv/article/view/csimq.2022-31.02
+
 # Online Fraud Detection Platform
 The online fraud detection platform is designed to handle real-time streaming data transaction data, process it immediately, and send the result to the relevant notification services.
 
